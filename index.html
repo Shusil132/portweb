@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="dashboard-container">
+
+        <!-- Header / Profile Section -->
+        <header class="card profile-card">
+            <div class="profile-info">
+                <h1>SHUSIL KUMAR NAYAK</h1>
+                <p class="role">Data Analyst & Python Developer</p>
+                <div class="social-links">
+                    <a href="mailto:shusilnayak38@gmail.com">Email</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main class="content-grid">
+
+            <!-- Summary -->
+            <section class="card summary-card">
+                <h2>Summary</h2>
+                <p>Looking forward to building a professional career as a Data Analyst / Scientist. Skilled in Intro to
+                    Analytic Thinking, Data Science, and Data Mining.</p>
+            </section>
+
+            <!-- Experience -->
+            <section class="card experience-card">
+                <h2>Experience</h2>
+                <div class="scrollable-content">
+                    <div class="item">
+                        <h3>Data Analyst</h3>
+                        <p class="company">Digital Twins in Smart City</p>
+                        <p>Worked with Python to implement digital twins solutions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section class="card skills-card">
+                <h2>Skills</h2>
+                <div class="tags">
+                    <span>Python</span>
+                    <span>Data Analysis</span>
+                    <span>Data Mining</span>
+                    <span>Analytic Thinking</span>
+                    <span>Smart City</span>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section class="card projects-card">
+                <h2>Projects</h2>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h3>E-Commerce Dashboard</h3>
+                        <p>Real-time analytics dashboard for online stores.</p>
+                    </div>
+                    <div class="project-item">
+                        <h3>Portfolio v1</h3>
+                        <p>Previous iteration of personal portfolio.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Education -->
+            <section class="card education-card">
+                <h2>Education</h2>
+                <div class="item">
+                    <h3>B.S. Computer Science</h3>
+                    <p>University of Technology</p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Mobile Navigation Tabs (Visible only on mobile) -->
+        <nav class="mobile-nav">
+            <button class="nav-btn active" data-target="profile-card">Profile</button>
+            <button class="nav-btn" data-target="summary-card">About</button>
+            <button class="nav-btn" data-target="experience-card">Exp</button>
+            <button class="nav-btn" data-target="projects-card">Work</button>
+        </nav>
+
+    </div>
+
+    <!-- Chatbot Widget -->
+    <div id="chat-widget">
+        <button id="chat-toggle-btn">
+            💬
+        </button>
+        <div id="chat-window" class="hidden">
+            <div class="chat-header">
+                <h3>Chat with Shusi's AI</h3>
+                <button id="chat-close-btn">✖</button>
+            </div>
+            <div id="chat-messages">
+                <div class="message bot">Hi! I'm trained on Shusi's resume. Ask me anything!</div>
+            </div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="chat-send-btn">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
